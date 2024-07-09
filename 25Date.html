@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Date()</h1>
+
+
+    <script>
+
+
+        let dt = new Date();
+        console.log(dt);
+
+        console.log(dt.getFullYear());
+        console.log(dt.getMonth());
+
+        let today = dt.getDate();
+        console.log(today);
+
+
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+        console.log(months[dt.getMonth()]);
+
+        console.log(dt.getDay());
+
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        console.log(days[dt.getDay()]);
+
+
+        console.log("Time ___________");
+        console.log(dt.getHours());
+        console.log(dt.getMinutes());
+        console.log(dt.getSeconds());
+        console.log(dt.getMilliseconds());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

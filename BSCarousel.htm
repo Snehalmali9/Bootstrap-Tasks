@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            .swiper {
+  width: 600px;
+  height: 300px;
+}
+        </style>
+</head>
+
+<body style="margin-bottom: 300px;">
+    <div class="container">
+        <h1>1 Sildes only</h1>
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/slider1.jpg" class="w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/slider2.jpg" class="w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/slider3.jpg" class="w-100" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h1>2 With Button Controls</h1>
+
+        <div class="carousel slide" id="withcontrols" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/slider1.jpg" class="w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/slider2.jpg" class="w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/slider3.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#withcontrols">
+                <span class="carousel-control-prev-icon"></span>
+                <!-- <i class="fa-solid fa-arrow-rotate-left"></i> -->
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#withcontrols">
+                <span class="carousel-control-next-icon"></span>
+                <!-- <i class="fa-solid fa-arrow-rotate-left"></i> -->
+            </button>
+        </div>
+
+        <h1>3 With Indicators</h1>
+        <div class="carousel slide" data-bs-ride="carousel" id="withindicators">
+            <div class="carousel-indicators">
+                <button class="active rounded" data-bs-slide-to="0" data-bs-target="#withindicators"></button>
+           
+                <button data-bs-slide-to="1" data-bs-target="#withindicators"></button>
+                <button data-bs-slide-to="2" data-bs-target="#withindicators"> </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="assets/images/slider1.jpg" class="w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Slider 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias facilis neque corporis ea obcaecati distinctio, atque vitae dolorum aut nesciunt, odio doloremque nostrum, quae voluptatibus ut possimus accusantium hic cum?</p>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/images/slider2.jpg" class="w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Slider 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias facilis neque corporis ea obcaecati distinctio, atque vitae dolorum aut nesciunt, odio doloremque nostrum, quae voluptatibus ut possimus accusantium hic cum?</p>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/images/slider3.jpg" class="w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Slider 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias facilis neque corporis ea obcaecati distinctio, atque vitae dolorum aut nesciunt, odio doloremque nostrum, quae voluptatibus ut possimus accusantium hic cum?</p>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#withindicators">
+                <span class="carousel-control-prev-icon"></span>
+                <!-- <i class="fa-solid fa-arrow-rotate-left"></i> -->
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#withindicators">
+                <span class="carousel-control-next-icon"></span>
+                <!-- <i class="fa-solid fa-arrow-rotate-left"></i> -->
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>

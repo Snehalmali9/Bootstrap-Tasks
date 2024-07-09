@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Shopping</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1542282084-3e78e6a9fba2');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #6f42c1;
+    }
+    .purple-bg {
+      background-color: #6f42c1;
+      color: #fff;
+    }
+    .footer {
+      background-color: #6f42c1;
+      color: #fff;
+    }
+    .footer a {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark purple-bg">
+  <a class="navbar-brand" href="#">Purple Shopping</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header purple-bg text-center">
+          Register
+        </div>
+        <div class="card-body">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+          <div class="text-center mt-3">
+            Already have an account? <a href="#">Login here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-5 py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Gallery</h5>
+        <!-- Add your gallery images here -->
+        <div class="row">
+          <div class="col-4">
+            <img src="https://via.placeholder.com/150" alt="Gallery Image" class="img-fluid">
+          </div>
+          <div class="col-4">
+            <img src="https://via.placeholder.com/150" alt="Gallery Image" class="img-fluid">
+          </div>
+          <div class="col-4">
+            <img src="https://via.placeholder.com/150" alt="Gallery Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Shop Address</h5>
+        <p>123 Main Street, City, Country</p>
+        <p>Phone: +123456789</p>
+        <p>Email: info@example.com</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2024 Purple Shopping. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+  $(document).ready(function(){
+    $('#registerForm').submit(function(event){
+      event.preventDefault();
+      // Perform registration logic here
+      // For simplicity, just alert the registration success
+      alert('Registration successful!');
+    });
+  });
+</script>
+
+</body>
+</html>
